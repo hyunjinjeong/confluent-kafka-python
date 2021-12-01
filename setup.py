@@ -76,16 +76,16 @@ trove_classifiers = [
     'Topic :: Software Development :: Libraries :: Python Modules',
 ]
 
-setup(name='confluent-kafka',
+setup(name='pup-confluent-kafka',
       # Make sure to bump CFL_VERSION* in confluent_kafka/src/confluent_kafka.h
       # and version in docs/conf.py.
-      version='1.7.0',
-      description='Confluent\'s Python client for Apache Kafka',
-      author='Confluent Inc',
-      author_email='support@confluent.io',
+      version='1.7.1',
+      description='Patched version of Confluent\'s Python client for Apache Kafka',
+      author='Hyunjin Jeong',
+      author_email='hyunjin.dev@gmail.com',
       long_description=long_description,
       long_description_content_type='text/markdown',
-      url='https://github.com/confluentinc/confluent-kafka-python',
+      url='https://github.com/hyunjinjeong/confluent-kafka-python',
       ext_modules=[module],
       packages=find_packages('src'),
       package_dir={'': 'src'},
